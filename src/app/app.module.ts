@@ -21,9 +21,6 @@ import { HomePageModule } from '../pages/home/home.module';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import { Camera } from '@ionic-native/camera';
 
-
-
-
 @NgModule({
   declarations: [
     MyApp,
@@ -50,11 +47,11 @@ import { Camera } from '@ionic-native/camera';
     MyApp,
     DashboardPage,
     RegisterPage
-
   ],
   providers: [
     StatusBar,
-    SplashScreen, Camera,
+    SplashScreen, 
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ApiProvider
