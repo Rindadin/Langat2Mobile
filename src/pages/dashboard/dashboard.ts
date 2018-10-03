@@ -8,8 +8,10 @@ import{ Chart } from 'chart.js';
 })
 export class DashboardPage {
   public lineChartData:Array<any> = [
-    {data: [65, 59, 80, 81, 56], label: 'Series A'},
-    {data: [28, 48, 40, 19, 86], label: 'Series B'},
+    {data: [100, 80, 280, 410, 560], label: 'Structure'},
+    {data: [240, 285, 300, 340, 380], label: 'Electrical'},
+    {data: [300, 360, 380, 400, 410], label: 'Mechanical'},
+    {data: [500, 540, 510, 520, 560], label: 'Instrument'}
     
   ];
   public lineChartLabels:Array<any> = ['Admin', 'Raw Water', 'Treatment Process', 'Sludge Treatment', 'Power Supply'];
@@ -17,29 +19,38 @@ export class DashboardPage {
     responsive: true
   };
   public lineChartColors:Array<any> = [
-    { // grey
-      backgroundColor: 'rgba(148,159,177,0.2)',
+    { // blue violet
+      backgroundColor: 'rgba(148,159,177,0)',
       borderColor: 'rgba(148,159,177,1)',
       pointBackgroundColor: 'rgba(148,159,177,1)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(148,159,177,0.8)'
     },
-    { // dark grey
-      backgroundColor: 'rgba(77,83,96,0.2)',
-      borderColor: 'rgba(77,83,96,1)',
-      pointBackgroundColor: 'rgba(77,83,96,1)',
+    { // chocolate
+      backgroundColor: 'rgba(210,105,30,0.2)',
+      borderColor: 'rgba(210,105,30,1)',
+      pointBackgroundColor: 'rgba(210,105,30,1)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(77,83,96,1)'
+      pointHoverBorderColor: 'rgba(210,105,30,1)'
     },
-    { // grey
-      backgroundColor: 'rgba(148,159,177,0.2)',
-      borderColor: 'rgba(148,159,177,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
+    { // indianred
+      backgroundColor: 'rgba(205,92,92,0.2)',
+      borderColor: 'rgba(205,92,92,1)',
+      pointBackgroundColor: 'rgba(205,92,92,1)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+      pointHoverBorderColor: 'rgba(205,92,92,0.8)'
+    },
+
+    { // dark turqoise
+      backgroundColor: 'rgba(0,206,209,0.2)',
+      borderColor: 'rgba(0,206,209,1)',
+      pointBackgroundColor: 'rgba(0,206,209,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(0,206,209,1)'
     }
   ];
   public lineChartLegend:boolean = true;
@@ -88,7 +99,7 @@ public barChartType:string = 'bar';
 public barChartLegend:boolean = true;
 
 public barChartData:any[] = [
-  {data: [65,90,140,30]}
+  {data: [65,90,140,30], label:'assets'}
 ];
 
 // events

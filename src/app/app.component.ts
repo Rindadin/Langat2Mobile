@@ -33,7 +33,7 @@ export class MyApp {
       { title: 'Register', component: RegisterPage, icon: 'list' },
       { title: 'Profile', component: 'ProfilePage', icon: 'person' },
       {title: 'Pending Sync', component: PendingPage, icon: 'refresh'},
-      { title: 'Asset Disapproaval', component: AssetPage, icon: 'done-all'}
+      { title: 'Asset Status', component: AssetPage, icon: 'done-all'}
      
     ];
     this.listenToLoginEvents();

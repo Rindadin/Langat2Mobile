@@ -9,11 +9,11 @@
           </ion-col>
 
           <ion-col col-2>
-            <button  ion-button color="orange" outline>Edit Asset</button>
+            <button  ion-button icon-end color="orange" outline>Edit Asset <ion-icon  ios="ios-create" md="md-create" ></ion-icon> </button>
           </ion-col>
 
           <ion-col col-2>
-              <button class="button-color" ion-button (click)="saveAsset()" >Save Asset</button>
+              <button icon-end class="button-color" ion-button (click)="saveAsset()" >Save Asset <ion-icon name="download"></ion-icon> </button>
             </ion-col>
 
         </ion-row>
@@ -818,7 +818,7 @@
         <ion-grid>
           <ion-row>
             <ion-col col-2 offset-10>
-              <button class="btn" ion-button (click)="openModal()" >Add Image</button>
+              <button icon-end class="btn" ion-button (click)="openModal()">Add Image <ion-icon name="add"></ion-icon> </button>
             </ion-col>
 
             <ion-col col-3>
