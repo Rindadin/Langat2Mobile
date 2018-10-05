@@ -10,6 +10,8 @@ import { UserProvider } from '../providers/user/user';
 import { PendingPage } from '../pages/pending/pending';
 import { AssetPage } from '../pages/asset/asset';
 import { InspectionPage } from '../pages/inspection/inspection';
+import { OneSignal } from '@ionic-native/onesignal';
+
 
 
 
@@ -25,7 +27,7 @@ export class MyApp {
   isLoggedIn: boolean = false;
   pages: Array<{title: string, component: any, icon: string}>;
 
-  constructor(public user: UserProvider, public events: Events, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor( private oneSignal: OneSignal, public user: UserProvider, public events: Events, public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -45,6 +47,17 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
+      this.oneSignal.startInit('14ab8625-efd9-4b39-b071-2e51809d5334', '1071403410139').then(()=>{
+
+      }, err => {
+
+      });
+      this.oneSignal.getIds().then((data) => {
+        alert(JSON.stringify(data))
+      }, err => {
+
+      });
+
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });

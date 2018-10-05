@@ -21,7 +21,8 @@ import { HomePageModule } from '../pages/home/home.module';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import { Camera } from '@ionic-native/camera';
 import { InspectionPageModule } from '../pages/inspection/inspection.module';
-// import { InspectionPage } from '../pages/inspection/inspection';
+import { OneSignal } from '@ionic-native/onesignal';
+
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { InspectionPageModule } from '../pages/inspection/inspection.module';
     Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
-    ApiProvider
+    ApiProvider,
+    OneSignal
     
   ]
 })
