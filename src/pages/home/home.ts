@@ -5,6 +5,7 @@ import { RegisterPage } from '../register/register';
 import { ProfilePage } from '../profile/profile';
 import { PendingPage } from '../pending/pending';
 import { AssetPage } from '../asset/asset';
+import { InspectionPage } from '../inspection/inspection';
 
 /**
  * Generated class for the HomePage page.
@@ -22,7 +23,6 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-<<<<<<< HEAD
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
@@ -46,11 +46,10 @@ export class HomePage {
 
   goToAsset(){
     this.navCtrl.setRoot(AssetPage, {}, {animate: true});
-=======
+  }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
->>>>>>> master
+  goToInspection(){
+    this.navCtrl.setRoot(InspectionPage, {}, {animate: true});
   }
 
 }

@@ -9,6 +9,8 @@ import { RegisterPage } from '../pages/register/register';
 import { UserProvider } from '../providers/user/user';
 import { PendingPage } from '../pages/pending/pending';
 import { AssetPage } from '../pages/asset/asset';
+import { InspectionPage } from '../pages/inspection/inspection';
+
 
 
 
@@ -30,7 +32,8 @@ export class MyApp {
     this.pages = [
       {title: 'Home', component: HomePage, icon: 'home'},
       { title: 'Dashboard', component: DashboardPage, icon: 'aperture' },
-      { title: 'Register', component: RegisterPage, icon: 'list' },
+      { title: 'Asset Registeration', component: RegisterPage, icon: 'list' },
+      { title: 'Asset Inspection', component: InspectionPage, icon: 'md-create' },
       { title: 'Profile', component: 'ProfilePage', icon: 'person' },
       {title: 'Pending Sync', component: PendingPage, icon: 'refresh'},
       { title: 'Asset Status', component: AssetPage, icon: 'done-all'}

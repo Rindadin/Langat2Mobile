@@ -20,18 +20,22 @@ import { PendingPageModule } from '../pages/pending/pending.module';
 import { HomePageModule } from '../pages/home/home.module';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 import { Camera } from '@ionic-native/camera';
+import { InspectionPageModule } from '../pages/inspection/inspection.module';
+// import { InspectionPage } from '../pages/inspection/inspection';
 
 @NgModule({
   declarations: [
     MyApp,
     DashboardPage,
     RegisterPage,
+    
    
   ],
   imports: [
     BrowserModule,
     LoginPageModule,
     ProfilePageModule,
+    InspectionPageModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
     ChartsModule,
@@ -46,7 +50,8 @@ import { Camera } from '@ionic-native/camera';
   entryComponents: [
     MyApp,
     DashboardPage,
-    RegisterPage
+    RegisterPage,
+    
   ],
   providers: [
     StatusBar,

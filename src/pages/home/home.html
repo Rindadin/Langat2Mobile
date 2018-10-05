@@ -13,20 +13,26 @@
 
   <ion-card>
     <img src="assets/imgs/profile.png"/>
+    <div class="card-title">ASSET INSPECTION</div>
+    <div class="card-subtitle"> <button class="btnwidth" ion-button block color="light" block (click)="goToInspection()">SEE MORE</button></div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/sync.png"/>
     <div class="card-title">PROFILE</div>
     <div class="card-subtitle"> <button class="btnwidth" ion-button block color="light" block (click)="goToProfile()">SEE MORE</button></div>
   </ion-card>
 
   <ion-card>
-    <img src="assets/imgs/sync.png"/>
+    <img src="assets/imgs/asset.png"/>
     <div class="card-title">PENDING SYNC</div>
     <div class="card-subtitle"> <button class="btnwidth" ion-button block color="light" block (click)="goToPending()">SEE MORE</button></div>
   </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/asset.png"/>
+  
+  <ion-card class>
+    <img src="assets/imgs/dashboard.png"/>
     <div class="card-title">ASSET APPROVAL</div>
-    <div class="card-subtitle"> <button class="btnwidth" ion-button block color="light" block (click)="goToAsset()">SEE MORE</button></div>
+    <div class="card-subtitle"> <button class="btnwidth" ion-button block color="light" block (click)="ggoToAsset()" >SEE MORE</button></div>
   </ion-card>
 
 </ion-content>
